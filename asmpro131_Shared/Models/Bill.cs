@@ -17,6 +17,7 @@ namespace asmpro131_Shared.Models
         public int Status { get; set; }
         [ForeignKey("VoucherID")]
         public Guid? VoucherID { get; set; }
+        public string Adress { get; set; }
         [ForeignKey("AccountID")]
         public Guid AccountID { get; set; }
         public virtual ICollection<BillDetails>? BillDetails { get; set; }
